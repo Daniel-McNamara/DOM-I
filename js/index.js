@@ -55,6 +55,23 @@ nav[3].textContent = siteContent.nav["nav-item-4"];
 nav[4].textContent = siteContent.nav["nav-item-5"];
 nav[5].textContent = siteContent.nav["nav-item-6"];
 
+// Create two new elements
+const newNav = document.querySelector("nav");
+
+const newElement1 = document.createElement('a');
+newElement1.textContent = "Home";
+newElement1.href = "#";
+newElement1.style.color = "green";
+
+const newElement2 = document.createElement('a');
+newElement2.textContent = "Blog";
+newElement2.href = "#";
+newElement2.style.color = "green";
+
+// Prepend and Append the two new elements
+newNav.prepend(newElement1);
+newNav.appendChild(newElement2);
+
 /* CTA CONTENT */
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.innerHTML = siteContent['cta']['h1'].replace(/\s/g, "</br>");
