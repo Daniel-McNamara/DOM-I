@@ -55,3 +55,18 @@ nav[3].textContent = siteContent.nav["nav-item-4"];
 nav[4].textContent = siteContent.nav["nav-item-5"];
 nav[5].textContent = siteContent.nav["nav-item-6"];
 
+/* CTA CONTENT */
+const ctaText = document.querySelector(".cta-text h1");
+ctaText.innerHTML = siteContent['cta']['h1'].replace(/\s/g, "</br>");
+
+const ctaBtn = document.querySelector(".cta-text button");
+ctaBtn.textContent = siteContent.cta["button"];
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent.cta["img-src"];
+
+
+
+/* FOOTER */
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent.footer["copyright"]; 
